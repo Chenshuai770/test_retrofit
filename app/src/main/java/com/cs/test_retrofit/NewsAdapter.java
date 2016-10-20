@@ -56,6 +56,7 @@ public class NewsAdapter extends BaseAdapter {
         }
 
         viewHolder = (ViewHolder) convertView.getTag();
+
         Picasso.with(mContext).load("http://tnfs.tngou.net/image"+mNewsList.get(position).getImg()).into(viewHolder.newsImageView);
         viewHolder.newsTitleTextView.setText(mNewsList.get(position).getName());
         viewHolder.newsDescriptionTextView.setText(mNewsList.get(position).getDescription());
